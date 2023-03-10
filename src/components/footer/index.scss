@@ -1,0 +1,36 @@
+
+@import 'src/assets/scss/define.scss';
+
+footer{
+    max-width: 1280px;
+    @extend %ma;
+    @extend %c9;
+    @extend %b0;
+    @extend %r0;
+    @extend %l0;
+    @extend %tac;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    padding-bottom: 66px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #5E636D;
+    .gongan{
+        margin-right: 40px;
+    }
+    .ga-link{
+        margin-right: 30px;
+    }
+    a{
+        color: #5E636D;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .inner{
+        margin-right: 30px;
+    }
+
+}

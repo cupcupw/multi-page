@@ -1,0 +1,14 @@
+
+{{if useHeaderSeat}}
+<div class="header-seat"></div>
+{{/if}}
+
+<header class="{{headerClass}}">
+    <h1 class="logo" title="汽车街"></h1>
+    <ul class="tab-bar">
+        <li class="tab-item {{currentTab === 'index'?'current':''}}"><a href="./" class="tab-item-link">首页2</a></li>
+        <li class="tab-item {{currentTab === 'about'?'current':''}}" ><a href="./about.html" class="tab-item-link">关于我们</a></li>
+        <li class="tab-item {{currentTab === 'news'?'current':''}}"><a href="./news.html" class="tab-item-link">新闻动态</a></li>
+        <li class="tab-item {{currentTab === 'contact'?'current':''}}"><a href="./contact.html" class="tab-item-link">联系我们</a></li>
+    </ul>
+</header>

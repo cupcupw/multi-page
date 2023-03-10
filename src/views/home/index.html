@@ -1,0 +1,117 @@
+
+{{extend 'src/layouts/index.html'}}
+
+{{block 'title'}}关于我们{{/block}}
+
+{{block 'content'}}
+
+{{include '../../components/header/index.html'}}
+<div class="main">
+    <div class="banner">
+        <img class="banner-img" src="~src/assets/images/banner-default.jpg">
+    </div>
+    <div class="main-inner">
+        <ul id="left-list" class="left-list">
+            <li class="current" data-n="floor1">公司介绍12345</li>
+            <li data-n="floor2">发展历程212233</li>
+            <li data-n="floor3">获得荣誉1</li>
+            <li data-n="floor4">联系我们112211222333</li>
+        </ul>
+        <ul id="floor-warp" class="floor-warp">
+            <li class="floor floor-about" data-n="floor1">
+                <div class="page-title">
+                    <p>公司介绍</p>
+                    <p>About us</p>
+                </div>
+                <div class="article">
+                    <p>汽车街发展有限公司成立于2014年6月，总部位于上海。由拥有全球最大的汽车交易及二手车拍卖平台的美国Cox Automotive旗下美瀚、润华投资、中国汽车流通协会引领下的核心百强经销商集团等共同发起并出资成立。2019年，汽车街相继获得腾讯&京东战略投资。</p>
+                    <p>汽车街是国内首家同时拥有“线上线下同步拍、在线拍、直播拍”三种拍卖模式的二手车电商平台。作为中国汽车流通协会副会长单位，汽车街采用源于美国美瀚的“线上线下同步竞拍”模式并加以创新，通过精准的“B2B同步拍卖模式”志在打造诚信公允的电商平台。通过精准的B2B市场定位，汽车街以ADMS二手车业务管理系统作为工具，EQS检测评估系统作为标准，线上线下同步拍作为交易场景，与国内多家知名经销商集团/二手车市场建立战略合作，获得大量稳定优质的一手车源。凭借公平公正、公开透明的拍卖原则，为车商提供更多优质服务。</p>
+                    <p>截止2022年，汽车街的服务网络已覆盖到除西藏以外的所有省份，构建出多层次、跨区域的全国二手车拍卖综合服务网络体系。未来，汽车街将继续致力于链接并服务全国经销商集团和二手车商户，保障资金的安全与车辆流通的顺畅，并提升行业规范及交易效率。</p>
+                </div>
+
+            </li>
+            <li class="floor floor-milestones" data-n="floor2">
+                <div class="page-title">
+                    <p>发展历程</p>
+                    <p>Milestones</p>
+                </div>
+                <div class="milestones">
+                    <ul class="years">
+                        <li data-year="2016" class="year2016"><span>2016</span></li>
+                        <li data-year="2017" class="year2017"><span>2017</span></li>
+                        <li data-year="2018" class="year2018"><span>2018</span></li>
+                        <li data-year="2019" class="year2019"><span>2019</span></li>
+                        <li data-year="2020" class="year2020"><span>2020</span></li>
+                        <li data-year="2021" class="current year2021"><span>2021</span></li>
+                    </ul>
+                    <h4>
+                        <span class="arrow arrow-left"></span>
+                        <span class="years-text">2021</span>
+                        <span class="arrow arrow-right disabled"></span>
+                    </h4>
+                    <p class="years-info">汽车街与一汽马自达、一汽大众、小鹏汽车、东风启辰、长城汽车、长安福特及全国各认证二手车中心签订战略合作协议，并对物流服务进行了全面升级</p>
+                </div>
+            </li>
+            <li class="floor floor-honors" data-n="floor3">
+                <div class="page-title">
+                    <p>获得荣誉111111</p>
+                    <p>Honors</p>
+                </div>
+                <div class="honors">
+                    <ul class="honors-title">
+                        <li>
+                            <span>2021</span>
+                            <div class="honors-text">
+                                <p>荣获中国机动车拍卖市场统计年报中成交量荣获行业第一，前十榜单独占三席。</p>
+                                <p>年获中国汽车流通行业品牌建设优秀会员</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span>2020</span>
+                            <div class="honors-text">
+                                <p>年获中国汽车流通行业综合实力杰出企业</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span>2019</span>
+                            <div class="honors-text">
+                                <p>荣获中国拍卖行业协会机动车拍卖标准化达标企业</p>
+                                <p>荣获中国汽车流通行业核心竞争力企业</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span>2018</span>
+                            <div class="honors-text">
+                                <p>年获中国汽车流通行业最具成长力企业</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="honors-image">
+                        <img src="~src/assets/images/hon2.png" alt="" width="160" height="184">
+                        <img src="~src/assets/images/hon3.png" alt="" width="160" height="184">
+                    </div>
+                </div>
+            </li>
+            <li class="floor floor-contact" data-n="floor4">
+                <div class="contact-warp">
+                    <div class="page-title">
+                        <p>联系我们</p>
+                        <p>Contact us</p>
+                    </div>
+                    <ul class="contact-list">
+                        <li class="contact-list-item">
+                            <span class="label">官方客服邮箱：</span>
+                            <p class="text">
+                                info@autostreets.com
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</div>
+{{include '../../components/footer/index.html'}}
+
+{{/block}}

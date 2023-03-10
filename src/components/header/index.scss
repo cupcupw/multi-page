@@ -1,0 +1,80 @@
+@import 'src/assets/scss/define.scss';
+
+.header-seat{
+    height: j(72);
+}
+
+header{
+    transition: all .3s ease-in;
+    height: 72px;
+    background-color: #1C2422;
+    width: 100%;
+    min-width: 1280px;
+    padding-right: calc((100% - 1280px)/2);
+    padding-left: calc((100% - 1280px)/2);
+    z-index: 9;
+    @extend %bsb;
+    @extend %pf;
+    @extend %df;
+    @extend %fdr;
+    @extend %jcs;
+    @extend %aic;
+    @extend %t0;
+}
+
+.logo{
+    background: url("src/assets/images/logo-1.png") no-repeat center center;
+    background-size: cover;
+    @extend %db;
+    width: 195px;
+    height: 72px;
+}
+
+.tab-bar{
+    @extend %df;
+    @extend %fdr;
+    @extend %aic;
+}
+.tab-item{
+    @extend %df;
+    @extend %aic;
+    cursor: pointer;
+    height: 60px;
+    &:not(:last-child){
+        padding-right: 56px;
+    }
+    &:hover, &.current{
+        ::after{
+            content: '';
+            @extend %pa;
+            left: 0;
+            bottom: 5px;
+            width: 100%;
+            height: 2px;
+            background: #379F87;
+        }
+    }
+}
+.tab-item-link{
+    color: #fff;
+    margin-top: 2px;
+    @extend %pr;
+    font-size: 16px;
+    display: flex;
+    @extend %aic;
+    height: 60px;
+    line-height: 100%;
+}
+.header-status-1{
+    background-color: transparent;
+}
+.header-status-2{
+    background-color: #F3F3F3;
+    .logo{
+        background: url("src/assets/images/logo-2.png") no-repeat center center;
+        background-size: cover;
+    }
+    .tab-item-link {
+        color: #232726;
+    }
+}

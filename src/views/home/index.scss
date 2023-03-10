@@ -1,0 +1,252 @@
+@import "src/assets/scss/define.scss";
+@import "src/assets/scss/reset";
+@import "src/assets/scss/common";
+
+.banner{
+    height: 472px;
+}
+.main-inner{
+    @extend %df;
+    @extend %ma;
+    width: 1280px;
+    padding-top: 98px;
+}
+.left-list{
+    position: fixed;
+    top: 590px;
+    height: 240px;
+    border-right: 1px solid #EAEAEB;
+    left: 12%;
+    font-size: 16px;
+    color: #5E636D;
+    li{
+        width: 175px;
+        margin-bottom: 32px;
+        line-height: 22px;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        &::after{
+            transition: all .2s ease-in-out;
+        }
+        &.current{
+            @extend %pr;
+            color: #379F87;
+            &::before{
+                content: '';
+                width: 30px;
+                height: 30px;
+                background: url("src/assets/images/ic_car.png") no-repeat center;
+                background-size: cover;
+                @extend %pa;
+                left: -38px;
+                top: -4px;
+            }
+            &::after{
+                @extend %pa;
+                background-color: #379F87;
+                content: '';
+                width: 2px;
+                height: 100%;
+                right: -1px;
+            }
+
+        }
+    }
+}
+.floor-warp{
+    margin-left: auto;
+    width: 980px;
+}
+.article{
+    padding-top: 64px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #232726;
+    line-height: 28px;
+    width: 831px;
+    p{
+        margin-bottom: 20px;
+    }
+}
+.article-image{
+    margin-top: 60px;
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+    h5{
+        width: 944px;
+        height: 34px;
+        font-size: 24px;
+        font-weight: 500;
+        color: #232726;
+        line-height: 34px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+}
+.article-image-warp{
+    background: rgba(239,241,241,0.47);
+    margin-right: auto;
+    width: 944px;
+    height: 642px;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+}
+
+.floor-about{
+    padding-bottom: 125px;
+}
+
+// 历程
+.milestones{
+    width: 1094px;
+    height: 374px;
+    background: url("src/assets/images/about-2.png") no-repeat center;
+    background-size: cover;
+    margin-left: -122px;
+    margin-top: 64px;
+    margin-bottom: 80px;
+    @extend %df;
+    @extend %aic;
+    @extend %fdc;
+    h4{
+        font-size: 40px;
+        color: #379F87;
+        line-height: 56px;
+        margin-bottom: 18px;
+        @extend %df;
+        @extend %jcs;
+        @extend %aic;
+        .years-text{
+            margin: 0 85px;
+        }
+        .arrow{
+            width: 60px;
+            height: 20px;
+            background: url("src/assets/images/arrow-2.png") no-repeat center;
+            background-size: cover;
+            cursor: pointer;
+            &.arrow-right{
+                transform: rotate(180deg);
+            }
+            &.disabled{
+                opacity: 0.4;
+                cursor: not-allowed;
+            }
+        }
+    }
+    p{
+        width: 680px;
+        line-height: 32px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+.years{
+    @extend %df;
+    @extend %aic;
+    @extend %fdr;
+    padding-left: 100px;
+    padding-top: 73px;
+    padding-bottom: 64px;
+    li{
+        cursor: pointer;
+        @extend %bsb;
+        border: 13px solid #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(55, 159, 135, 0.4);
+        color: rgba(55, 159, 135, 0.4);
+        margin-right: 110px;
+        @extend %pr;
+        span{
+            @extend %pa;
+            top: -73px;
+            left: -50%;
+            transform: translateY(-50%);
+        }
+        &:not(:last-child)::after{
+            content: '';
+            @extend %pa;
+            right: -123px;
+            top: 6px;
+            width: 110px;
+            height: 2px;
+            background-color: #379F87;
+        }
+        &.current{
+            opacity: 1;
+            border-color: rgba(55, 159, 135, 0.16);
+            border-width: 6px;
+            background: url("src/assets/images/about-3.png") no-repeat center;
+            background-size: cover;
+            font-size: 36px;
+            color: #379F87;
+            &:not(:first-child){
+                margin-left: 6px;
+            }
+            &:not(:last-child)::after{
+                content: '';
+                @extend %pa;
+                right: -123px;
+                top: 13px;
+                width: 110px;
+                height: 2px;
+                background-color: #379F87;
+            }
+        }
+    }
+}
+// 荣耀
+.honors {
+    width: 944px;
+    background: rgba(239,241,241,0.47);
+    border-radius: 0px 0px 0px 0px;
+    opacity: 1;
+    margin-top: 50px;
+    @extend %bsb;
+    padding: 52px 0 60px 40px;
+    background: url("src/assets/images/hon6.png") no-repeat 699px 142px;
+    background-size: 203px;
+    background-color: rgba(239,241,241,0.47);
+    font-size: 16px;
+}
+.honors-title{
+    li{
+        padding-left: 28px;
+        line-height: 22px;
+        font-weight: 400;
+        background: url("src/assets/images/hon1.png") no-repeat 0 7px;
+        background-size: 18px;
+        margin-bottom: 24px;
+        @extend %df;
+        span{
+            margin-right: 30px;
+            line-height: 34px;
+            height: 34px;
+        }
+        .honors-text{
+            line-height: 28px;
+            padding-top: 2px;
+            p:not(:first-child){
+                margin-top: 16px;
+            }
+        }
+    }
+    padding-bottom: 24px;
+}
+.honors-image{
+    @extend %df;
+    @extend %fdr;
+    img{
+        display: block;
+        display: inline-block;
+        margin-right: 16px;
+    }
+}
+.contact-warp{
+    width: 980px;
+    margin: 0;
+}
